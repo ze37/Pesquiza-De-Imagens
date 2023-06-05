@@ -91,6 +91,7 @@ form{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    display: none;
 
 }
 #show-more-button:hover{
@@ -99,6 +100,20 @@ form{
 @media screen and (max-width:768px){
     .search-result{
         width: 45%;
+    }
+    
+    
+}
+@media screen and (max-width:480px){
+    .search-result{
+        width: 100%;
+    }
+    form{
+        flex-direction: column;
+    }
+    #search-input{
+        margin-bottom: 20px;
+        width: 85%;
     }
     
     
